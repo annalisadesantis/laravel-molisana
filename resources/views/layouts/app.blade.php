@@ -6,7 +6,7 @@
         {{-- FAVICON --}}
         <link rel="icon" href="https://www.lamolisana.it/wp-content/uploads/2017/07/favicon.png">
         {{-- CSS --}}
-        <link rel="stylesheet" href="{{ asset("css/app.css")}}">
+        <link rel="stylesheet" href="{{ asset('css/app.css')}}">
         {{-- GOOGLE FONT --}}
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,14 +14,16 @@
     <body>
         {{-- HEADER --}}
         @include("partials.header")
-
-        {{-- MAIN --}}
-        @yield("content")
+        
+        <main>
+            {{-- MAIN --}}
+            @yield("content")
+        </main>
 
         {{-- FOOTER --}}
         @include("partials.footer")
 
         {{-- JAVASCRIPT --}}
-        <script src="{{ asset("js/app.js")}}" charset="utf-8"></script>
+        <script src="{{ asset('js/app.js')}}" charset="utf-8"></script>
     </body>
 </html>

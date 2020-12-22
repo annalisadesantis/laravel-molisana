@@ -1,1 +1,40 @@
+footer{
+    height: 600px;
 
+    ul{
+        list-style-type: none;
+        margin: $small_space 0px;
+
+        li{
+            cursor: pointer;
+            color: #808080;
+            font-size: 20px;
+            font-weight: 300;
+
+            &:hover{
+                color: $color_base;
+            }
+        }
+    }
+
+    h4{
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: 600;
+        color: rgb(13, 34, 64);
+    }
+
+    .footer-top{
+        @include flex-row(space-around, center);
+
+        .logo-footer{
+            @include flex-column(column,center,flex-start);
+        }
+    }
+
+    .footer-bottom{
+        img{
+            max-width: 100%;
+        }
+    }
+}

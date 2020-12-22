@@ -1,1 +1,32 @@
+header{
+    @include flex-column(column,center,center);
 
+    .logo{
+        margin: $small_space 0px;
+    }
+
+    .nav{
+
+        ul{
+            list-style-type: none;
+
+            li{
+                display: inline-block;
+                margin: $big_space;
+                font-size: $font_size;
+                font-weight: 300;
+                color: $color_base;
+
+                a{
+                    text-decoration: none;
+                    padding: $small_space;
+
+                    &:hover{
+                        background-color: $color_hover;
+                        color: #444444;
+                    }
+                }
+            }
+        }
+    }
+}

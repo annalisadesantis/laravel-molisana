@@ -145,3 +145,7 @@ Route::get('/prodotti', function () {
     ];
     return view('prodotti', $data);
 })->name("pagina_prodotti");
+
+Route::get('/news', function () {
+    return view('news');
+})->name("pagina_news");
