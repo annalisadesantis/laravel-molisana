@@ -1,0 +1,68 @@
+section{
+    background-image: url("../images/sfondo.jpg");
+    margin-bottom: $big_space;
+}
+
+#home{
+    height: 600px;
+
+    h1{
+        color: $color_base;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+#prodotti{
+
+    h3{
+        text-transform: uppercase;
+        color: $color_base;
+        padding: 25px 0px;
+        font-size: 30px;
+        margin-left: $big_space;
+    }
+
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+
+        .card{
+            width: calc(100% / 3 - 40px);
+            height: 197.4px;
+            position: relative;
+            margin: $big_space;
+
+            img{
+                max-width: 100%;
+            }
+
+            .overlay{
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                a{
+                    color: $color_base;
+                    font-size: 22px;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                }
+
+            }
+
+            &:hover .overlay{
+                display: block;
+                background-color: rgba(255, 255, 255, 0.6);
+            }
+        }
+    }
+
+}
