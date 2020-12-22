@@ -3,15 +3,17 @@ section{
     margin-bottom: $big_space;
 }
 
-#home{
+#home, #news{
     height: 600px;
 
     h1{
         color: $color_base;
         font-size: 30px;
         text-align: center;
+        padding-top: 30px;
     }
 }
+
 
 #prodotti{
 

@@ -46,13 +46,14 @@ section {
   margin-bottom: 20px;
 }
 
-#home {
+#home, #news {
   height: 600px;
 }
-#home h1 {
+#home h1, #news h1 {
   color: #001942;
   font-size: 30px;
   text-align: center;
+  padding-top: 30px;
 }
 
 #prodotti h3 {
