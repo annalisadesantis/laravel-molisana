@@ -5,51 +5,21 @@
 @section("content")
     <section id="prodotti">
         <div class="container">
-            <h3>Le lunghe</h3>
-            <div class="card-container">
-                @foreach ($pasta as $paste)
-                    @if ($paste["tipo"] == "lunga")
+            @foreach ($formati as $tipo => $pasta)
+                <h3> Le {{ $tipo }} </h3>
+                <div class="card-container">
+                    @foreach ($pasta as $indice => $formato)
                         <div class="card">
-                            <img src="{{ $paste['src']}}" alt="{{ $paste['titolo']}}">
+                            <img src="{{ $formato['src']}}" alt="{{ $formato['titolo']}}">
                             <div class="overlay">
-                                <a href="#">
-                                    {{ $paste["titolo"]}}
+                                <a href="{{ route('pagina_dettagli', ['id' => $indice]) }}">
+                                    {{ $formato["titolo"]}}
                                 </a>
                             </div>
                         </div>
-                    @endif
-                @endforeach
-            </div>
-            <h3>Le corte</h3>
-            <div class="card-container">
-                @foreach ($pasta as $paste)
-                    @if ($paste["tipo"] == "corta")
-                        <div class="card">
-                            <img src="{{ $paste['src']}}" alt="{{ $paste['titolo']}}">
-                            <div class="overlay">
-                                <a href="#">
-                                    {{ $paste["titolo"]}}
-                                </a>
-                            </div>
-                        </div>
-                    @endif
-                @endforeach
-            </div>
-            <h3>Le cortissime</h3>
-            <div class="card-container">
-                @foreach ($pasta as $paste)
-                    @if ($paste["tipo"] == "cortissima")
-                        <div class="card">
-                            <img src="{{ $paste['src']}}" alt="{{ $paste['titolo']}}">
-                            <div class="overlay">
-                                <a href="#">
-                                    {{ $paste["titolo"]}}
-                                </a>
-                            </div>
-                        </div>
-                    @endif
-                @endforeach
-            </div>
+                    @endforeach
+                </div>
+            @endforeach
         </div>
     </section>
 @endsection

@@ -1,10 +1,7 @@
-section{
-    background-image: url("../images/sfondo.jpg");
-    margin-bottom: $big_space;
-}
-
 #home, #news{
     height: 600px;
+    background-image: url("../images/sfondo.jpg");
+    margin-bottom: $big_space;
 
     h1{
         color: $color_base;
@@ -16,6 +13,8 @@ section{
 
 
 #prodotti{
+    background-image: url("../images/sfondo.jpg");
+    margin-bottom: $big_space;
 
     h3{
         text-transform: uppercase;
@@ -67,4 +66,14 @@ section{
         }
     }
 
+}
+
+#pagina_dettagli{
+    margin-bottom: $big_space;
+
+    img{
+        max-width: 100%;
+        display: block;
+
+    }
 }

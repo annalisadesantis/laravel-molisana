@@ -12,14 +12,19 @@ header{
 
             li{
                 display: inline-block;
-                margin: $big_space;
+                margin: $small_space 0px;
                 font-size: $font_size;
                 font-weight: 300;
                 color: $color_base;
 
                 a{
                     text-decoration: none;
-                    padding: $small_space;
+                    padding: $small_space $big_space ;
+
+                    &.active{
+                        background-color: $color_hover;
+                        color: #444444;
+                    }
 
                     &:hover{
                         background-color: $color_hover;
