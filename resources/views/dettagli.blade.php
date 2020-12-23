@@ -4,10 +4,12 @@
 {{-- contenuti --}}
 @section("content")
     <section id="pagina_dettagli">
-        <div class="header-prodotto">
+        <div class="titolo-prodotto">
             <h1>
                 {{ $formato['titolo']}}
             </h1>
+        </div>
+        <div class="header-prodotto">
             <img src="{{ $formato['src-h']}}" alt="{{ $formato['titolo']}}">
         </div>
         <div class="pack-prodotto">
@@ -19,6 +21,9 @@
                     {!! $formato['descrizione'] !!}
                 </p>
             </div>
+        </div>
+        <div class="posate">
+            <img src="{{ asset('images/posate-classiche.jpg')}}" alt="">
         </div>
     </section>
 @endsection

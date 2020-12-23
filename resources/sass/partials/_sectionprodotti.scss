@@ -69,11 +69,26 @@
 }
 
 #pagina_dettagli{
-    margin-bottom: $big_space;
+    margin-bottom: 30px;
+
+    .titolo-prodotto{
+        background-color: #b8dae4;
+        margin-bottom: 2px;
+
+        h1{
+            text-align: center;
+            color: $color_base;
+            font-size: 30px;
+            font-weight: 400;
+        }
+    }
 
     img{
         max-width: 100%;
         display: block;
+    }
 
+    .descrizione{
+        background-color: #b8dae4;
     }
 }

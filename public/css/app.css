@@ -105,11 +105,24 @@ header .nav ul li a:hover {
 }
 
 #pagina_dettagli {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+#pagina_dettagli .titolo-prodotto {
+  background-color: #b8dae4;
+  margin-bottom: 2px;
+}
+#pagina_dettagli .titolo-prodotto h1 {
+  text-align: center;
+  color: #001942;
+  font-size: 30px;
+  font-weight: 400;
 }
 #pagina_dettagli img {
   max-width: 100%;
   display: block;
+}
+#pagina_dettagli .descrizione {
+  background-color: #b8dae4;
 }
 
 footer {
