@@ -25,7 +25,8 @@ footer{
     }
 
     .footer-top{
-        @include flex-row(space-around, center);
+        @include flex-row(space-around, flex-start);
+        margin-top: $big_space;
 
         .logo-footer{
             @include flex-column(column,center,flex-start);
