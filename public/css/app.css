@@ -112,6 +112,8 @@ header .nav ul li a:hover {
   position: absolute;
   font-size: 24px;
   color: #002d73;
+  padding: 20px;
+  background-color: rgba(0, 45, 115, 0.3);
 }
 #pagina_dettagli .freccia-left i, #pagina_dettagli .freccia-right i {
   cursor: pointer;
@@ -120,13 +122,11 @@ header .nav ul li a:hover {
   top: 50%;
   left: 0;
   position: fixed;
-  margin-left: 10px;
 }
 #pagina_dettagli .freccia-right {
   top: 50%;
   right: 0;
   position: fixed;
-  margin-right: 10px;
 }
 #pagina_dettagli .titolo-prodotto {
   background-color: #b8dae4;

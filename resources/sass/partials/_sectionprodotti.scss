@@ -76,6 +76,8 @@
         position: absolute;
         font-size: $font_size;
         color: $color_base_light;
+        padding: $big_space;
+        background-color: rgba(0, 45, 115, 0.3);
 
         i{
             cursor: pointer;
@@ -86,14 +88,12 @@
         top: 50%;
         left: 0;
         position: fixed;
-        margin-left: $small_space;
     }
 
     .freccia-right{
         top: 50%;
         right: 0;
         position: fixed;
-        margin-right: $small_space;
     }
 
     .titolo-prodotto{
