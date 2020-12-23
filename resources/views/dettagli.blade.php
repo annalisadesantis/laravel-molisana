@@ -1,6 +1,13 @@
 @extends("layouts.app")
+
 {{-- titolo --}}
 @section("page-title", "I dettagli prodotti | La Molisana")
+
+{{-- cdn fontawesome --}}
+@section('script-fontawesome')
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+@endsection
+
 {{-- contenuti --}}
 @section("content")
     <section id="pagina_dettagli">
@@ -17,6 +24,31 @@
         </div>
         <div class="descrizione">
             <div class="container">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="{{ asset('images/logo-molisana.png')}}" alt="Logo Molisana">
+                        </td>
+                        <td>
+                            Grano Decorticato a Pietra <br> trafilatura al Bronzo
+                        </td>
+                        <td>
+                            <img src="{{ asset('images/acqua-molise.png')}}" alt="Logo Molisana">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ $formato['titolo']}}
+                        </td>
+                        <td>
+                            <i class="far fa-clock"></i>
+                            Tempi di Cottura: {{ $formato['cottura']}}
+                        </td>
+                        <td>
+                            {{ $formato['peso']}}
+                        </td>
+                    </tr>
+                </table>
                 <p>
                     {!! $formato['descrizione'] !!}
                 </p>

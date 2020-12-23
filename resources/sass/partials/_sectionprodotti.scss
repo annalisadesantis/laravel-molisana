@@ -77,7 +77,7 @@
 
         h1{
             text-align: center;
-            color: $color_base;
+            color: $color_base_light;
             font-size: 30px;
             font-weight: 400;
         }
@@ -90,5 +90,44 @@
 
     .descrizione{
         background-color: #b8dae4;
+
+        table{
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            border-radius: 3px;
+            border-bottom: 1px solid $color_base;
+            margin-bottom: $big_space;
+
+
+            td{
+                padding: 12px;
+                border-bottom: 1px solid $color_base;
+                text-align: center;
+                border-right: 1px solid $color_base;
+                color: $color_base_light;
+                text-transform: uppercase;
+                font-size: 40px;
+                font-weight: 400;
+
+                &:last-child{
+                    border-right: none;
+                }
+
+                img{
+                    display: inline-block;
+                }
+            }
+        }
+
+        p{
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: $color_base_light;
+            line-height: 1.8;
+        }
     }
 }
