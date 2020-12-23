@@ -45,6 +45,7 @@ Route::get('/dettagli-prodotto/{id}', function($id) {
     return view('dettagli', $data);
 })->name("pagina_dettagli");
 
+
 Route::get('/news', function () {
     return view('news');
 })->name("pagina_news");
