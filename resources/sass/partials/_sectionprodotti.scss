@@ -70,6 +70,31 @@
 
 #pagina_dettagli{
     margin-bottom: 30px;
+    position: relative;
+
+    .freccia-left, .freccia-right{
+        position: absolute;
+        font-size: $font_size;
+        color: $color_base_light;
+
+        i{
+            cursor: pointer;
+        }
+    }
+
+    .freccia-left{
+        top: 50%;
+        left: 0;
+        position: fixed;
+        margin-left: $small_space;
+    }
+
+    .freccia-right{
+        top: 50%;
+        right: 0;
+        position: fixed;
+        margin-right: $small_space;
+    }
 
     .titolo-prodotto{
         background-color: #b8dae4;

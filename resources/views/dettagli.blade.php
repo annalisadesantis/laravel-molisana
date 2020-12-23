@@ -11,6 +11,16 @@
 {{-- contenuti --}}
 @section("content")
     <section id="pagina_dettagli">
+        <div class="freccia-left">
+            <i class="fas fa-chevron-left">
+                <a href="#"></a>
+            </i>
+        </div>
+        <div class="freccia-right">
+            <i class="fas fa-chevron-right">
+                <a href="#"></a>
+            </i>
+        </div>
         <div class="titolo-prodotto">
             <h1>
                 {{ $formato['titolo']}}
