@@ -12,14 +12,14 @@
 @section("content")
     <section id="pagina_dettagli">
         <div class="freccia-left">
-            <i class="fas fa-chevron-left">
-                <a href="#"></a>
-            </i>
+            <a href="{{ route('pagina_dettagli', ['id' => $prev ]) }}">
+               <i class="fas fa-chevron-left"></i>
+            </a>
         </div>
         <div class="freccia-right">
-            <i class="fas fa-chevron-right">
-                <a href="#"></a>
-            </i>
+            <a href="{{ route('pagina_dettagli', ['id' =>  $next]) }}">
+                <i class="fas fa-chevron-right"></i>
+            </a>
         </div>
         <div class="titolo-prodotto">
             <h1>

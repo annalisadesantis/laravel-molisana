@@ -118,6 +118,9 @@ header .nav ul li a:hover {
 #pagina_dettagli .freccia-left i, #pagina_dettagli .freccia-right i {
   cursor: pointer;
 }
+#pagina_dettagli .freccia-left i:active, #pagina_dettagli .freccia-left i:hover, #pagina_dettagli .freccia-right i:active, #pagina_dettagli .freccia-right i:hover {
+  color: #001942;
+}
 #pagina_dettagli .freccia-left {
   top: 50%;
   left: 0;
